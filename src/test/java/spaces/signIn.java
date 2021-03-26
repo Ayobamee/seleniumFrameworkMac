@@ -26,7 +26,9 @@ public class signIn {
         if (prop.getProperty("browser").equals("chrome")){
             System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
             //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//driver//chromedriver89");
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+            driver = new ChromeDriver(options);
 
 
         }
@@ -48,9 +50,6 @@ public class signIn {
         //Create an object from the spaces landing page.
         spacesLandingPage spacesLpage = new spacesLandingPage(driver);
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
 
         //Open spaces url
         spacesLpage.goTo();
