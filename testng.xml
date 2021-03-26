@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyShopTestSuite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="org.spaces.completeBasicSale"/>
+      <class name="org.spaces.incompleteBasicSale"/>
+      <class name="org.spaces.completeAdvancedSale"/>
+      <class name="org.spaces.totalSales"/>
+      <class name="org.spaces.totalOwed"/>
+      <class name="org.spaces.inventory"/>
+      <class name="org.spaces.orders"/>
+      <class name="org.spaces.reports"/>
+
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
