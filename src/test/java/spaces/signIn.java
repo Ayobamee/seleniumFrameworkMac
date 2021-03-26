@@ -52,7 +52,7 @@ public class signIn {
 
 
         //Open spaces url
-        spacesLpage.goTo();
+        //spacesLpage.goTo();
 
         //Set fingerprint.
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -105,7 +105,7 @@ public class signIn {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         //Click Allow notification
-        spacesLpage.getNotification().allowNotification();
+        //spacesLpage.getNotification().allowNotification();
 
         //Scroll down
         JavascriptExecutor js1 = ((JavascriptExecutor) driver);
