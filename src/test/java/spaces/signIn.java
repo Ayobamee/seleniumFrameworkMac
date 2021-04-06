@@ -15,11 +15,11 @@ import org.spaces.PageObjects.spacesLandingPage;
 
 public class signIn {
     public WebDriver driver;
-    public Properties prop;
+    //public Properties prop;
 
 
     public WebDriver  signIn () throws IOException, InterruptedException {
-        prop = new Properties();
+        /*prop = new Properties();
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//utilities//datadriven.properties");
         prop.load(fis);
 
@@ -43,16 +43,22 @@ public class signIn {
             driver = new InternetExplorerDriver();
 
         }
+        */
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
+        driver = new ChromeDriver(chromeOptions);
+
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.get(prop.getProperty("URL"));
+
+        //Open spaces home page.
+        driver.get("https://staging.spaceso2o.com/launch");
 
         //Create an object from the spaces landing page.
         spacesLandingPage spacesLpage = new spacesLandingPage(driver);
 
-
-        //Open spaces url
-        //spacesLpage.goTo();
 
         //Set fingerprint.
         JavascriptExecutor js = (JavascriptExecutor) driver;
