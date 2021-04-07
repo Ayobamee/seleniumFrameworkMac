@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.spaces.PageObjects.spacesLandingPage;
@@ -15,20 +15,17 @@ import org.spaces.PageObjects.spacesLandingPage;
 
 public class signIn {
     public WebDriver driver;
-    //public Properties prop;
+    public Properties prop;
 
 
     public WebDriver  signIn () throws IOException, InterruptedException {
-        /*prop = new Properties();
+        prop = new Properties();
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//utilities//datadriven.properties");
         prop.load(fis);
 
         if (prop.getProperty("browser").equals("chrome")){
-            System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-            //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//driver//chromedriver89");
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            driver = new ChromeDriver(options);
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//driver//chromedriver89");
+            driver = new ChromeDriver();
 
 
         }
@@ -43,18 +40,13 @@ public class signIn {
             driver = new InternetExplorerDriver();
 
         }
-        */
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--no-sandbox");
-        driver = new ChromeDriver(chromeOptions);
+
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         //Open spaces home page.
-        driver.get("https://staging.spaceso2o.com/launch");
+        driver.get(prop.getProperty("URL"));
 
         //Create an object from the spaces landing page.
         spacesLandingPage spacesLpage = new spacesLandingPage(driver);
@@ -111,13 +103,12 @@ public class signIn {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         //Click Allow notification
-        //spacesLpage.getNotification().allowNotification();
+        spacesLpage.getNotification().allowNotification();
 
         //Scroll down
         JavascriptExecutor js1 = ((JavascriptExecutor) driver);
         js1.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         Thread.sleep(5000);
-
 
 
 
