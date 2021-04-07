@@ -14,7 +14,7 @@ public class completeBasicSale extends signIn {
         //Sign into the app.
         driver =  signIn();
 
-        //Create a shop page In object.
+        //Create a shop page  object.
         myShopPage shopPage = new myShopPage(driver);
 
         //Click sale.
