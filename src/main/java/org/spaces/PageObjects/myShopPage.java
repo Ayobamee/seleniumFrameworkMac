@@ -41,6 +41,8 @@ public class myShopPage {
     By Shops = By.xpath("//p[contains(text(),'Shops')]");
     By AllProducts = By.xpath("//p[contains(text(),'All products')]");
     By popularProducts = By.xpath("//p[contains(text(),'Popular products')]");
+    By merchBuyprod = By.xpath("//body/div[@id='root']/main[1]/div[4]/div[1]/div[2]/a[1]");
+
 
 
 
@@ -250,6 +252,12 @@ public class myShopPage {
         return new popularProducts(driver, popularProducts);
     }
 
+
+
+    public merchBuyprod getmerchBuyprod()
+    {
+        return new merchBuyprod(driver, merchBuyprod);
+    }
 }
 
 

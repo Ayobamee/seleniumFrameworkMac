@@ -1,4 +1,5 @@
 package org.spaces;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import org.spaces.PageObjects.myShopPage;
 import spaces.signIn;
@@ -28,6 +29,14 @@ public class placeOrder extends signIn {
 
         //Click Okay
         shopPage.getacceptState().clickOkay();
+
+        //Scroll down
+        JavascriptExecutor js1 = ((JavascriptExecutor) driver);
+        js1.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        Thread.sleep(5000);
+
+        //choose product
+        shopPage.getmerchBuyprod().clickProd();
 
 
 
