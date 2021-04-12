@@ -5,7 +5,7 @@ import spaces.signIn;
 import java.io.IOException;
 
 
-public class completeBasicSale extends signIn {
+public class placeOrder extends signIn {
 
     @Test
 
