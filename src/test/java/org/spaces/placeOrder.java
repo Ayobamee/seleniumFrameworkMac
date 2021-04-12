@@ -9,7 +9,7 @@ public class placeOrder extends signIn {
 
     @Test
 
-        public void completeBasicSaleTest() throws InterruptedException, IOException {
+        public void placeOrderTest() throws InterruptedException, IOException {
 
         //Sign into the app.
         driver =  signIn();
@@ -17,18 +17,23 @@ public class placeOrder extends signIn {
         //Create a shop page  object.
         myShopPage shopPage = new myShopPage(driver);
 
-        //Click sale.
-        shopPage.getShop().makeSale();
+        //Click MerchBuy
+        shopPage.getmerchBuy().clickMerchBuy();
 
-        //Accept notification for sales.
-        shopPage.getSaleNotification().acceptNotifcation();
+        //Select Location
+        shopPage.getstateLocation().chooseState();
 
-       //Enter Sales Amount.
-        shopPage.getSaleAmount().enterSalesAmount();
+        //Click Lagos
+        shopPage.getselectLagos().clickLagos();
 
-        //Click Add Sale.
-        shopPage.getAddCompBasicSale().hitAddSale();
+        //Click Okay
+        shopPage.getacceptState().clickOkay();
 
+
+
+
+
+/*
     //Assert complete simple sale has been done successfully
 
         if(shopPage.getSimpleSaleConfirmation().checkSimpleSaleConfirmation()){
@@ -40,6 +45,8 @@ public class placeOrder extends signIn {
         }
 
         driver.quit();
+        */
+
 
     }
 

@@ -11,7 +11,7 @@ public class merchBuyDashboard extends signIn {
 
     @Test
 
-        public void productCategoriesTest() throws InterruptedException, IOException {
+        public void merchBuyDashboardTest() throws InterruptedException, IOException {
 
         //Sign into the app.
         driver =  signIn();

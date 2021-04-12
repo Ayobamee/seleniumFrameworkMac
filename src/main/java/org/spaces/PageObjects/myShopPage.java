@@ -33,6 +33,15 @@ public class myShopPage {
     By inventory = By.xpath("//p[contains(text(),'Inventory')]");
     By orders = By.xpath("//p[contains(text(),'Orders')]");
     By reports = By.xpath("//p[contains(text(),'Reports')]");
+    By merchBuy = By.xpath("//body/div[@id='root']/main[1]/div[2]/section[1]/div[2]/div[1]");
+    By stateLocation = By.xpath("//body/div[@id='root']/div[2]/div[2]/form[1]/div[1]/div[1]/div[1]/div[2]/div[1]/*[1]");
+    By selectLagos = By.xpath("//div[contains(text(),'Lagos')]");
+    By acceptState = By.xpath("//button[contains(text(),'Okay')]");
+    By productCategories = By.xpath("//p[contains(text(),'Product categories')]");
+    By Shops = By.xpath("//p[contains(text(),'Shops')]");
+    By AllProducts = By.xpath("//p[contains(text(),'All products')]");
+    By popularProducts = By.xpath("//p[contains(text(),'Popular products')]");
+
 
 
     WebDriver driver;
@@ -194,4 +203,57 @@ public class myShopPage {
         return new reports(driver, reports);
     }
 
+    public merchBuy getmerchBuy()
+    {
+        return new merchBuy(driver, merchBuy);
+    }
+
+
+    public stateLocation getstateLocation()
+    {
+        return new stateLocation(driver, stateLocation);
+    }
+
+
+    public selectLagos getselectLagos()
+    {
+        return new selectLagos(driver, selectLagos);
+    }
+
+
+    public acceptState getacceptState()
+    {
+        return new acceptState(driver, acceptState);
+    }
+
+    public productCategories getproductCategories()
+    {
+        return new productCategories(driver, productCategories);
+    }
+
+    public Shops getShops()
+    {
+        return new Shops(driver, Shops);
+    }
+
+
+
+    public AllProducts getAllProducts()
+    {
+        return new AllProducts(driver, AllProducts);
+    }
+
+
+
+    public popularProducts getpopularProducts()
+    {
+        return new popularProducts(driver, popularProducts);
+    }
+
 }
+
+
+
+
+
+
