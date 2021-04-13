@@ -42,6 +42,10 @@ public class myShopPage {
     By AllProducts = By.xpath("//p[contains(text(),'All products')]");
     By popularProducts = By.xpath("//p[contains(text(),'Popular products')]");
     By merchBuyprod = By.xpath("//body/div[@id='root']/main[1]/div[4]/div[1]/div[2]/a[1]");
+    By firstMerchBuyProd = By.xpath("//div[contains(text(),'new fish')]");
+    By addToCart = By.xpath("//button[contains(text(),'Add To Cart')]");
+    By secondAddToCart = By.xpath("//button[contains(text(),'Add to cart')]");
+    By cartConfirmation = By.xpath("//body/div[@id='root']/main[1]/section[1]");
 
 
 
@@ -258,6 +262,36 @@ public class myShopPage {
     {
         return new merchBuyprod(driver, merchBuyprod);
     }
+
+
+    public firstMerchBuyProd getfirstMerchBuyProd()
+    {
+        return new firstMerchBuyProd(driver, firstMerchBuyProd);
+    }
+
+
+
+
+    public addToCart getaddToCart()
+    {
+        return new addToCart(driver, addToCart);
+    }
+
+
+
+
+    public secondAddToCart getsecondAddToCart()
+    {
+        return new secondAddToCart(driver, secondAddToCart);
+    }
+
+
+
+    public cartConfirmation getcartConfirmation()
+    {
+        return new cartConfirmation(driver, cartConfirmation);
+    }
+
 }
 
 

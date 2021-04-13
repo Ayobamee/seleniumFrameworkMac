@@ -1,34 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2021-04-13T10:47:26Z" name="MyShopTestSuite" finished-at="2021-04-13T10:49:01Z" duration-ms="94664">
-    <groups>
-    </groups>
-    <test started-at="2021-04-13T10:47:26Z" name="Test" finished-at="2021-04-13T10:49:01Z" duration-ms="94664">
-      <class name="org.spaces.merchBuyDashboard">
-        <test-method signature="merchBuyDashboardTest()[pri:0, instance:org.spaces.merchBuyDashboard@1e6454ec]" started-at="2021-04-13T11:47:26Z" name="merchBuyDashboardTest" finished-at="2021-04-13T11:47:51Z" duration-ms="25173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- merchBuyDashboardTest -->
-      </class> <!-- org.spaces.merchBuyDashboard -->
-      <class name="org.spaces.addProductToCart">
-        <test-method signature="addProductToCartTest()[pri:0, instance:org.spaces.addProductToCart@5ace1ed4]" started-at="2021-04-13T11:47:51Z" name="addProductToCartTest" finished-at="2021-04-13T11:49:01Z" duration-ms="69463" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: window was already closed
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 13 11:47:26 WAT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>94 seconds (94664 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.spaces.addProductToCart.addProductToCartTest()'><b>addProductToCartTest</b><br>Test class: org.spaces.addProductToCart</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
   (Session info: chrome=89.0.4389.114)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:1832:2e98:fa95:adca%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;Ayobamis-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1832:2e98:fa95:adca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.iKSC9t}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59088}, acceptInsecureCerts=false, browserVersion=89.0.4389.114, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 1609f2c510715f0d36459d2f25cfae0d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+Session ID: 1609f2c510715f0d36459d2f25cfae0d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:522)
+	at spaces.signIn.signIn(signIn.java:57)
+	at org.spaces.addProductToCart.addProductToCartTest(addProductToCart.java:20)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1788380050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1788380050'><pre>org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
   (Session info: chrome=89.0.4389.114)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:1832:2e98:fa95:adca%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;Ayobamis-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1832:2e98:fa95:adca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.iKSC9t}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59088}, acceptInsecureCerts=false, browserVersion=89.0.4389.114, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
 Session ID: 1609f2c510715f0d36459d2f25cfae0d
@@ -75,13 +143,22 @@ Session ID: 1609f2c510715f0d36459d2f25cfae0d
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCartTest -->
-      </class> <!-- org.spaces.addProductToCart -->
-    </test> <!-- Test -->
-  </suite> <!-- MyShopTestSuite -->
-</testng-results>
+</pre></div></td>
+<td>69</td>
+<td>org.spaces.addProductToCart@5ace1ed4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.spaces.merchBuyDashboard.merchBuyDashboardTest()'><b>merchBuyDashboardTest</b><br>Test class: org.spaces.merchBuyDashboard</td>
+<td></td>
+<td>25</td>
+<td>org.spaces.merchBuyDashboard@1e6454ec</td></tr>
+</table><p>
+</body>
+</html>

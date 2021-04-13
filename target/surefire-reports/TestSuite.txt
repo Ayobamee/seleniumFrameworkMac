@@ -1,56 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 179.635 s <<< FAILURE! - in TestSuite
-completeBasicSaleTest(org.spaces.completeBasicSale)  Time elapsed: 45.085 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),"I'll do this later")]"}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 96.742 s <<< FAILURE! - in TestSuite
+addProductToCartTest(org.spaces.addProductToCart)  Time elapsed: 69.475 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: window was already closed
+  (Session info: chrome=89.0.4389.114)
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:18b2:743e:aaa8:d195%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:1832:2e98:fa95:adca%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.gBpEK3}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62091}, acceptInsecureCerts=false, browserVersion=89.0.4389.90, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: c058b846d472dbb7a647f5a7fba11f8d
-*** Element info: {Using=xpath, value=//button[contains(text(),"I'll do this later")]}
-	at org.spaces.completeBasicSale.completeBasicSaleTest(completeBasicSale.java:27)
-
-incompleteBasicSaleTest(org.spaces.incompleteBasicSale)  Time elapsed: 39.745 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),"I'll do this later")]"}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:18b2:743e:aaa8:d195%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.33RrmQ}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62117}, acceptInsecureCerts=false, browserVersion=89.0.4389.90, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 498534fd51a809e908e41f1745383d5e
-*** Element info: {Using=xpath, value=//button[contains(text(),"I'll do this later")]}
-	at org.spaces.incompleteBasicSale.incompleteBasicSaleTest(incompleteBasicSale.java:27)
-
-completeAdvancedSaleTest(org.spaces.completeAdvancedSale)  Time elapsed: 43.996 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),"I'll do this later")]"}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:18b2:743e:aaa8:d195%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.IaFyGK}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62156}, acceptInsecureCerts=false, browserVersion=89.0.4389.90, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 0a7b0e4fd5c7a875616bc26b042e722f
-*** Element info: {Using=xpath, value=//button[contains(text(),"I'll do this later")]}
-	at org.spaces.completeAdvancedSale.completeAdvancedSaleTest(completeAdvancedSale.java:24)
-
-totalSalesTest(org.spaces.totalSales)  Time elapsed: 44.654 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),"I'll do this later")]"}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:18b2:743e:aaa8:d195%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.sqS4q2}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62195}, acceptInsecureCerts=false, browserVersion=89.0.4389.90, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 014c95e60dd9df21a907215fb7bcca2e
-*** Element info: {Using=xpath, value=//button[contains(text(),"I'll do this later")]}
-	at org.spaces.totalSales.totalSalesTest(totalSales.java:24)
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.iKSC9t}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59088}, acceptInsecureCerts=false, browserVersion=89.0.4389.114, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 1609f2c510715f0d36459d2f25cfae0d
+	at org.spaces.addProductToCart.addProductToCartTest(addProductToCart.java:20)
 

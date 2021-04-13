@@ -1,7 +1,4 @@
-/Users/mac/Downloads/spacesShop/src/test/java/org/spaces/completeBasicSale.java
-/Users/mac/Downloads/spacesShop/src/test/java/spaces/signInTest.java
-/Users/mac/Downloads/spacesShop/src/test/java/org/spaces/addProduct.java
-/Users/mac/Downloads/spacesShop/src/test/java/org/spaces/totalSales.java
-/Users/mac/Downloads/spacesShop/src/test/java/org/spaces/totalOwed.java
-/Users/mac/Downloads/spacesShop/src/test/java/org/spaces/incompleteBasicSale.java
-/Users/mac/Downloads/spacesShop/src/test/java/org/spaces/completeAdvancedSale.java
+/Users/mac/Downloads/spacesMerchBuy/src/test/java/spaces/signIn.java
+/Users/mac/Downloads/spacesMerchBuy/src/test/java/org/spaces/merchBuyDashboard.java
+/Users/mac/Downloads/spacesMerchBuy/src/test/java/org/spaces/addProductToCart.java
+/Users/mac/Downloads/spacesMerchBuy/src/test/java/spaces/scroll.java

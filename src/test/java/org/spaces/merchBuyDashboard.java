@@ -52,8 +52,7 @@ public class merchBuyDashboard extends signIn {
             System.out.println("Oops, something went wrong");
         }
 
-        //driver.quit();
-
+        driver.quit();
 
 
     }

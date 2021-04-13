@@ -4,8 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="org.spaces.merchBuyDashboard"/>
-
-
+      <class name="org.spaces.addProductToCart"/>
 
     </classes>
   </test> <!-- Test -->
