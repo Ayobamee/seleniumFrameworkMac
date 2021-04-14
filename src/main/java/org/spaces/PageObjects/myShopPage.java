@@ -46,6 +46,7 @@ public class myShopPage {
     By addToCart = By.xpath("//button[contains(text(),'Add To Cart')]");
     By secondAddToCart = By.xpath("//button[contains(text(),'Add to cart')]");
     By cartConfirmation = By.xpath("//body/div[@id='root']/main[1]/section[1]");
+    By checkOut = By.xpath("//button[contains(text(),'Checkout')]");
 
 
 
@@ -290,6 +291,14 @@ public class myShopPage {
     public cartConfirmation getcartConfirmation()
     {
         return new cartConfirmation(driver, cartConfirmation);
+    }
+
+
+
+
+    public checkOut getcheckOut()
+    {
+        return new checkOut(driver, checkOut);
     }
 
 }

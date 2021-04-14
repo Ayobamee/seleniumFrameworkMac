@@ -67,7 +67,7 @@ public class addProductToCart extends signIn {
             System.out.println("Oops, something went wrong");
         }
 
-        driver.quit();
+        //driver.quit();
 
 
 
@@ -80,7 +80,6 @@ public class addProductToCart extends signIn {
 
     }
     //short scroll method.
-
     private void shortScroll() throws InterruptedException {
         JavascriptExecutor jse = ((JavascriptExecutor) driver);
         jse.executeScript("window.scrollBy(0,500)");
