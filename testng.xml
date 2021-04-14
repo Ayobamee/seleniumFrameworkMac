@@ -5,6 +5,8 @@
     <classes>
       <class name="org.spaces.merchBuyDashboard"/>
       <class name="org.spaces.addProductToCart"/>
+      <class name="org.spaces.checkOut"/>
+
 
     </classes>
   </test> <!-- Test -->
