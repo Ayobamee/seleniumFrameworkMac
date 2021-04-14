@@ -47,6 +47,12 @@ public class myShopPage {
     By secondAddToCart = By.xpath("//button[contains(text(),'Add to cart')]");
     By cartConfirmation = By.xpath("//body/div[@id='root']/main[1]/section[1]");
     By checkOut = By.xpath("//button[contains(text(),'Checkout')]");
+    By placeOrder = By.xpath("//button[contains(text(),'Place Order')]");
+    By confirmDeliveryAddress = By.xpath("//button[contains(text(),'Confirm delivery address')]");
+    By contactAddress = By.xpath("//body/div[@id='root']/main[1]/div[1]/ul[2]/div[1]/div[1]");
+    By city = By.xpath("//body/div[@id='root']/main[1]/div[2]/form[1]/div[1]/div[5]/div[1]/div[2]/div[1]/*[1]");
+    By selectCity = By.xpath("//div[contains(text(),'AKUTE')]");
+    By saveDeliveryDetails = By.xpath("//button[contains(text(),'Save')]");
 
 
 
@@ -271,14 +277,10 @@ public class myShopPage {
     }
 
 
-
-
     public addToCart getaddToCart()
     {
         return new addToCart(driver, addToCart);
     }
-
-
 
 
     public secondAddToCart getsecondAddToCart()
@@ -287,19 +289,49 @@ public class myShopPage {
     }
 
 
-
     public cartConfirmation getcartConfirmation()
     {
         return new cartConfirmation(driver, cartConfirmation);
     }
 
 
-
-
     public checkOut getcheckOut()
     {
         return new checkOut(driver, checkOut);
     }
+
+    public placeOrder getplaceOrder()
+    {
+        return new placeOrder(driver, placeOrder);
+    }
+
+
+    public confirmDeliveryAddress getconfirmDeliveryAddress()
+    {
+        return new confirmDeliveryAddress(driver, confirmDeliveryAddress);
+    }
+
+
+
+   public contactAddress getcontactAddress() {
+       return new contactAddress(driver, contactAddress);
+   }
+
+
+
+    public city getcity() {
+        return new city(driver, city);
+    }
+
+    public selectCity getselectCity() {
+        return new selectCity(driver, selectCity);
+    }
+
+
+    public saveDeliveryDetails getsaveDeliveryDetails() {
+        return new saveDeliveryDetails(driver, saveDeliveryDetails);
+    }
+
 
 }
 
