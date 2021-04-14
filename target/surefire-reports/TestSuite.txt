@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 96.742 s <<< FAILURE! - in TestSuite
-addProductToCartTest(org.spaces.addProductToCart)  Time elapsed: 69.475 s  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: window was already closed
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:1832:2e98:fa95:adca%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.iKSC9t}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59088}, acceptInsecureCerts=false, browserVersion=89.0.4389.114, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 1609f2c510715f0d36459d2f25cfae0d
-	at org.spaces.addProductToCart.addProductToCartTest(addProductToCart.java:20)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 85.835 s - in TestSuite

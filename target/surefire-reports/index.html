@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MyShopTestSuite" class="navigator-link">
-              <span class="suite-name border-failed">MyShopTestSuite</span>
+              <span class="suite-name border-passed">MyShopTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MyShopTestSuite" class="hide-methods failed suite-MyShopTestSuite"> (hide)</a> <!-- hide-methods failed suite-MyShopTestSuite -->
-                      <a href="#" panel-name="suite-MyShopTestSuite" class="show-methods failed suite-MyShopTestSuite"> (show)</a> <!-- show-methods failed suite-MyShopTestSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-MyShopTestSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyShopTestSuite" title="org.spaces.addProductToCart" class="method navigator-link" hash-for-method="addProductToCartTest">addProductToCartTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-MyShopTestSuite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-MyShopTestSuite" class="show-methods passed suite-MyShopTestSuite"> (show)</a> <!-- show-methods passed suite-MyShopTestSuite -->
                     </span>
                     <div class="method-list-content passed suite-MyShopTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyShopTestSuite" title="org.spaces.addProductToCart" class="method navigator-link" hash-for-method="addProductToCartTest">addProductToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyShopTestSuite" title="org.spaces.merchBuyDashboard" class="method navigator-link" hash-for-method="merchBuyDashboardTest">merchBuyDashboardTest</a> <!-- method navigator-link -->
@@ -131,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MyShopTestSuite" class="panel MyShopTestSuite">
-          <div class="suite-MyShopTestSuite-class-failed">
+          <div class="suite-MyShopTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">org.spaces.addProductToCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -142,28 +133,10 @@
                   <a name="addProductToCartTest">
                   </a> <!-- addProductToCartTest -->
                   <span class="method-name">addProductToCartTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;Ayobamis-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1832:2e98:fa95:adca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.iKSC9t}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59088}, acceptInsecureCerts=false, browserVersion=89.0.4389.114, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 1609f2c510715f0d36459d2f25cfae0d
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:522)
-	at spaces.signIn.signIn(signIn.java:57)
-	at org.spaces.addProductToCart.addProductToCartTest(addProductToCart.java:20)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MyShopTestSuite-class-failed -->
+          </div> <!-- suite-MyShopTestSuite-class-passed -->
           <div class="suite-MyShopTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -236,11 +209,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addProductToCartTest')
 data.setCell(0, 2, 'org.spaces.addProductToCart')
-data.setCell(0, 3, 69463);
+data.setCell(0, 3, 43272);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'merchBuyDashboardTest')
 data.setCell(1, 2, 'org.spaces.merchBuyDashboard')
-data.setCell(1, 3, 25173);
+data.setCell(1, 3, 36408);
 window.suiteTableData['MyShopTestSuite']= { tableData: data, tableDiv: 'times-div-MyShopTestSuite'}
 return data;
 }
@@ -280,10 +253,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">org.spaces.addProductToCart</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">addProductToCartTest</span>
-                <span class="method-start">25176 ms</span>
+                <span class="method-start">36411 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

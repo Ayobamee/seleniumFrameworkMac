@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="96.742" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="85.835" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/mac/Downloads/spacesMerchBuy/target/surefire/surefirebooter10557598853624502219.jar /Users/mac/Downloads/spacesMerchBuy/target/surefire 2021-04-13T11-47-24_477-jvmRun1 surefire6169360436165585404tmp surefire_016647108522544606229tmp"/>
+    <property name="sun.java.command" value="/Users/mac/Downloads/spacesMerchBuy/target/surefire/surefirebooter6152713324394016453.jar /Users/mac/Downloads/spacesMerchBuy/target/surefire 2021-04-13T13-50-55_644-jvmRun1 surefire6868509223615464421tmp surefire_05401186082076543126tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/mac/Downloads/spacesMerchBuy/target/test-classes:/Users/mac/Downloads/spacesMerchBuy/target/classes:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-java/3.6.0/selenium-java-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-api/3.6.0/selenium-api-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.6.0/selenium-chrome-driver-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.6.0/selenium-edge-driver-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.6.0/selenium-firefox-driver-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.6.0/selenium-ie-driver-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.6.0/selenium-opera-driver-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.6.0/selenium-remote-driver-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.6.0/selenium-safari-driver-3.6.0.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.7.5/byte-buddy-1.7.5.jar:/Users/mac/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mac/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/mac/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mac/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/mac/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/mac/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/mac/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/mac/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mac/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mac/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/mac/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/mac/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/mac/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/mac/.m2/repository/org/testng/testng/6.11/testng-6.11.jar:/Users/mac/.m2/repository/com/beust/jcommander/1.64/jcommander-1.64.jar:/Users/mac/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar:/Users/mac/.m2/repository/org/postgresql/postgresql/42.2.10/postgresql-42.2.10.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/mac/Downloads/spacesMerchBuy/target/surefire/surefirebooter10557598853624502219.jar"/>
+    <property name="surefire.real.class.path" value="/Users/mac/Downloads/spacesMerchBuy/target/surefire/surefirebooter6152713324394016453.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -53,26 +53,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="merchBuyDashboardTest" classname="org.spaces.merchBuyDashboard" time="25.173"/>
-  <testcase name="addProductToCartTest" classname="org.spaces.addProductToCart" time="69.475">
-    <failure message="no such window: window was already closed&#10;  (Session info: chrome=89.0.4389.114)&#10;Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;&#10;System info: host: &apos;Ayobamis-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1832:2e98:fa95:adca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.iKSC9t}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59088}, acceptInsecureCerts=false, browserVersion=89.0.4389.114, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 1609f2c510715f0d36459d2f25cfae0d" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
-no such window: window was already closed
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'Ayobamis-MacBook-Pro.local', ip: 'fe80:0:0:0:1832:2e98:fa95:adca%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/30/d5vv3g8j783ffwy_3y8_jg8h0000gn/T/.com.google.Chrome.iKSC9t}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59088}, acceptInsecureCerts=false, browserVersion=89.0.4389.114, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 1609f2c510715f0d36459d2f25cfae0d
-	at org.spaces.addProductToCart.addProductToCartTest(addProductToCart.java:20)
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 6567
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Apr 13, 2021 11:47:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Apr 13, 2021 11:49:01 AM org.openqa.selenium.remote.ErrorCodes toStatus
-INFO: HTTP Status: '404' -> incorrect JSON status mapping for 'no such window' (400 expected)
-]]></system-err>
-  </testcase>
+  <testcase name="merchBuyDashboardTest" classname="org.spaces.merchBuyDashboard" time="36.408"/>
+  <testcase name="addProductToCartTest" classname="org.spaces.addProductToCart" time="43.274"/>
 </testsuite>

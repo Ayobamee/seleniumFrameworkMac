@@ -1,11 +1,9 @@
 package org.spaces;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.spaces.PageObjects.myShopPage;
 import spaces.signIn;
-import spaces.scroll;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -34,10 +32,9 @@ public class addProductToCart extends signIn {
         //Click Okay.
         shopPage.getacceptState().clickOkay();
 
-        //Scroll down
-        JavascriptExecutor js1 = ((JavascriptExecutor) driver);
-        js1.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-        Thread.sleep(5000);
+        //Scroll for long.
+        longScroll();
+
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -49,10 +46,9 @@ public class addProductToCart extends signIn {
         //click first prod.
         shopPage.getfirstMerchBuyProd().clickProd();
 
-        //scroll down to particular product
-        JavascriptExecutor jse = ((JavascriptExecutor) driver);
-        jse.executeScript("window.scrollBy(0,500)");
-        Thread.sleep(5000);
+        //scroll a bit down to particular product
+        shortScroll();
+
 
         //Click add to cart.
         shopPage.getaddToCart().chooseCart();
@@ -74,6 +70,21 @@ public class addProductToCart extends signIn {
         driver.quit();
 
 
+
+    }
+      //Long scroll method.
+    private void longScroll() throws InterruptedException {
+        JavascriptExecutor js1 = ((JavascriptExecutor) driver);
+        js1.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        Thread.sleep(5000);
+
+    }
+    //short scroll method.
+
+    private void shortScroll() throws InterruptedException {
+        JavascriptExecutor jse = ((JavascriptExecutor) driver);
+        jse.executeScript("window.scrollBy(0,500)");
+        Thread.sleep(5000);
 
     }
 
