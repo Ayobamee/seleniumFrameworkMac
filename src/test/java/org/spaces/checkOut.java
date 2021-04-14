@@ -42,6 +42,18 @@ public class checkOut extends addProductToCart {
         shopPage.getsaveDeliveryDetails().save();
 */
 
+        //save delivery address
+        shopPage.getselectDeliveryAddress().saveAddress();
+
+        //choose delivery method
+        shopPage.getselectselectDeliveryMethod().clickProvider();
+
+        shortScroll();
+
+        //choose delivery provider
+        shopPage.getdeliveryProviders().chooseProvider();
+
+
 
     }
 

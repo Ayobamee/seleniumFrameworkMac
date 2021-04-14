@@ -53,6 +53,9 @@ public class myShopPage {
     By city = By.xpath("//body/div[@id='root']/main[1]/div[2]/form[1]/div[1]/div[5]/div[1]/div[2]/div[1]/*[1]");
     By selectCity = By.xpath("//div[contains(text(),'AKUTE')]");
     By saveDeliveryDetails = By.xpath("//button[contains(text(),'Save')]");
+    By selectDeliveryAddress = By.xpath("//button[contains(text(),'Select')]");
+    By selectDeliveryMethod = By.xpath("//button[contains(text(),'Choose delivery provider')]");
+    By deliveryProviders = By.xpath("//p[contains(text(),'Free Shipping')]");
 
 
 
@@ -332,6 +335,19 @@ public class myShopPage {
         return new saveDeliveryDetails(driver, saveDeliveryDetails);
     }
 
+
+    public selectDeliveryAddress getselectDeliveryAddress() {
+        return new selectDeliveryAddress(driver, selectDeliveryAddress);
+    }
+
+    public selectDeliveryMethod getselectselectDeliveryMethod() {
+        return new selectDeliveryMethod(driver, selectDeliveryMethod);
+    }
+
+
+    public deliveryProviders getdeliveryProviders() {
+        return new deliveryProviders(driver, deliveryProviders);
+    }
 
 }
 
