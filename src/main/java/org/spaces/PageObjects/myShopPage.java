@@ -56,6 +56,12 @@ public class myShopPage {
     By selectDeliveryAddress = By.xpath("//button[contains(text(),'Select')]");
     By selectDeliveryMethod = By.xpath("//button[contains(text(),'Choose delivery provider')]");
     By deliveryProviders = By.xpath("//p[contains(text(),'Free Shipping')]");
+    By selectProvider = By.xpath("//button[contains(text(),'Select')]");
+    By continueCheckOut = By.xpath("//button[contains(text(),'Continue')]");
+    By spacesWallet = By.xpath("//p[contains(text(),'Spaces Wallet')]");
+    By proceedToSummary = By.xpath("//button[contains(text(),'Proceed to Summary')]");
+    By pay              = By.xpath("//button[contains(text(),'Pay')]");
+    By orderNotification = By.xpath("//h5[contains(text(),'Your order has been created successfully')]");
 
 
 
@@ -349,7 +355,54 @@ public class myShopPage {
         return new deliveryProviders(driver, deliveryProviders);
     }
 
+
+
+    public selectProvider getselectProvider() {
+        return new selectProvider(driver, selectProvider);
+    }
+
+
+
+
+    public spacesWallet getspacesWallet() {
+        return new spacesWallet(driver, spacesWallet);
+    }
+
+
+
+    public continueCheckOut getcontinueCheckOut() {
+        return new continueCheckOut(driver, continueCheckOut);
+
+
+    }
+
+
+
+    public proceedToSummary getproceedToSummary() {
+        return new proceedToSummary(driver, proceedToSummary);
+
+
+    }
+
+
+
+    public pay getpay() {
+        return new pay(driver, pay);
+
+
+    }
+
+
+
+
+    public orderNotification getorderNotification() {
+        return new orderNotification(driver, orderNotification);
+
+
+    }
+
 }
+
 
 
 

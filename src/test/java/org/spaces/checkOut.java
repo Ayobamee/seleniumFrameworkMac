@@ -19,6 +19,7 @@ public class checkOut extends addProductToCart {
         //click check out
         shopPage.getcheckOut().clickCheckOut();
 
+        //scroll
         shortScroll();
 
         //Place order.
@@ -27,31 +28,57 @@ public class checkOut extends addProductToCart {
         //Confirm address.
         shopPage.getconfirmDeliveryAddress().clickAddress();
 
+
         //select address.
         shopPage.getcontactAddress().clickContactAddress();
-
-        //shortScroll();
-/*
-        //Choose city
-        shopPage.getcity().chooseCity();
-
-        //Choose Lagos
-        shopPage.getselectCity().chooseCity();
-
-        //Save delivery details
-        shopPage.getsaveDeliveryDetails().save();
-*/
 
         //save delivery address
         shopPage.getselectDeliveryAddress().saveAddress();
 
+
         //choose delivery method
         shopPage.getselectselectDeliveryMethod().clickProvider();
 
+        //scroll
         shortScroll();
 
         //choose delivery provider
         shopPage.getdeliveryProviders().chooseProvider();
+
+        //click select
+        shopPage.getselectProvider().clickSelect();
+
+        //scroll
+        shortScroll();
+
+        //Click continue
+        shopPage.getcontinueCheckOut().clickContinue();
+
+        //choose spaces wallet
+        shopPage.getspacesWallet().clickSpacesWallet();
+
+        //scroll
+        shortScroll();
+
+        //Proceed to summary
+        shopPage.getproceedToSummary().clickProceed();
+
+        //scroll
+        shortScroll();
+
+        //Click Pay
+        shopPage.getpay().clickPay();
+
+
+        //Assert order can be placed successfully
+
+        if(shopPage.getorderNotification().orderConfirmation()){
+
+            System.out.println("Order has been placed successfully");
+        }
+        else{
+            System.out.println("Oops, something went wrong");
+        }
 
 
 
