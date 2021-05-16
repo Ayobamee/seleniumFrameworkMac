@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spacesShop" />
         <module name="spacesShopServer" />
+        <module name="spacesMerchBuy" />
+        <module name="QualesDemo" />
+        <module name="spacesShop" />
       </profile>
     </annotationProcessing>
   </component>

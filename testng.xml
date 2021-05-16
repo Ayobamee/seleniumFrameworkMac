@@ -3,10 +3,7 @@
 <suite name="MyShopTestSuite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="org.spaces.merchBuyDashboard"/>
-      <class name="org.spaces.addProductToCart"/>
-      <class name="org.spaces.checkOut"/>
-
+      <class name="qualesDemo.TestCases.firefoxTests.demoAutomation"/>
 
     </classes>
   </test> <!-- Test -->
