@@ -15,7 +15,7 @@ public class demoAutomation  {
         //Open Browser
         System.out.println("Opening firefox browser");
 
-        //Choose Chrome
+        //Choose firefox
         driver = firefox.open();
 
         driver.manage().window().maximize();
